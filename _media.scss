@@ -1,0 +1,30 @@
+@mixin respond($media) {
+	@if $media == computers {
+	    @media only screen and (min-width : 1824px) { @content; }
+	}
+	@else if $media == laptops {
+	    @media only screen and (min-width : 1224px) { @content; }
+	}
+	@else if $media == ipads-landscape {
+	    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { @content; }
+	}
+	@else if $media == ipads-portrait {
+	    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { @content; }
+	}
+	@else if $media == tablets-landscape {
+	    @media only screen and (max-width : 1024px) and (orientation : landscape), only screen and (max-width : 1024px)  { @content; }
+	}
+	@else if $media == tablets-portrait {
+	    @media only screen and (max-width : 768px) and (orientation : portrait), only screen and (max-width : 768px) { @content; }
+	}
+	@else if $media == smartphones {
+	    @media only screen and (max-width : 600px) { @content; }
+	}
+	@else if $media == phones {
+	    @media only screen and (max-width : 480px) { @content; }
+	}
+	@else if $media == iphone4s {
+	    @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) { @content; }
+	}		
+}
+
