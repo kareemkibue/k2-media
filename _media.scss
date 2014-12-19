@@ -7,7 +7,7 @@
 	}
 	@else if $media == ipads-landscape {
 	    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { @content; }
-	}
+	} 
 	@else if $media == ipads-portrait {
 	    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { @content; }
 	}
