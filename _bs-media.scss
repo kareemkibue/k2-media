@@ -1,0 +1,27 @@
+/*$ipad-width-landscape:1024px;
+$ipad-height-landscape:768px;
+$ipad-height-portrait:1024px;
+$ipad-width-portrait:768px;
+
+$smartphone-width:480px;*/
+
+
+//MIXINS
+@mixin respond($media) {		
+	//bootstrap grid
+	@if $media == screen-lg {
+	    @media only screen and (min-width : 1200px) { @content; }
+	}			
+	@else if $media == screen-md {
+	    @media only screen and (max-width : 1199px) { @content; }
+	}
+	@else if $media == screen-sm {
+	    @media only screen and (max-width : 991px)  { @content; }
+	}
+	@else if $media == screen-xs {
+	    @media only screen and (max-width : 767px) { @content; }
+	}
+	@else if $media == screen-xxs {
+	    @media only screen and (max-width : 480px) { @content; }
+	}
+}
