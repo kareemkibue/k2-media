@@ -1,0 +1,251 @@
+@mixin respond($media) {
+    @if $media==computer {
+        @media only screen and (min-width: 1824px) {
+            @content;
+        }
+    }
+    @else if $media==laptop {
+        @media only screen and (min-width: 1224px) {
+            @content;
+        }
+    }
+    @else if $media==oldpc {
+        @media only screen and (min-width: 1024px) {
+            @content;
+        }
+    }
+    @else if $media==smpc {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+    @else if $media==tablet-all {
+        // @media only screen and (max-device-width : 1024px), only screen and (max-width : 1280px) and (min-resolution: 169dpi) and { @content; }
+        @media only screen and (max-width: 1280px) and (min-resolution: 169dpi), only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+            @content;
+        } // @media only screen and (max-width : 1280px) { @content; }
+    }
+    @else if $media==tablet {
+        @media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+            @content;
+        }
+    }
+    @else if $media==tablet-landscape {
+        @media only screen and (max-width: 1024px) and (orientation: landscape), only screen and (max-device-width: 1024px) and (orientation: landscape) {
+            @content;
+        }
+    }
+    @else if $media==tablet-portrait {
+        @media only screen and (max-width: 768px) and (orientation: portrait), only screen and (max-device-width: 768px) and (orientation: portrait) {
+            @content;
+        }
+    }
+    @else if $media==smartphone {
+        @media only screen and (max-width: 600px) {
+            @content;
+        }
+    }
+    @else if $media==phone {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    } // iPad (General)
+    @else if $media==ipad {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            @content;
+        }
+    }
+    @else if $media==ipad-portrait {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+            @content;
+        }
+    }
+    @else if $media==ipad-landscape {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+            @content;
+        }
+    } // iPad 3 & 4
+    @else if $media==ipad-retina {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+            @content;
+        }
+    }
+    @else if $media==ipad-retina-portrait {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+            @content;
+        }
+    }
+    @else if $media==ipad-retina-landscape {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+            @content;
+        }
+    } // iPad 1 & 2
+    @else if $media==ipad-first {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+            @content;
+        }
+    }
+    @else if $media==ipad-first-portrait {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+            @content;
+        }
+    }
+    @else if $media==ipad-first-landscape {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+            @content;
+        }
+    } // iPad Mini
+    @else if $media==ipad-mini {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+            @content;
+        }
+    }
+    @else if $media==ipad-mini-portrait {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+            @content;
+        }
+    }
+    @else if $media==ipad-mini-landscape {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+            @content;
+        }
+    } // iPhone 6
+    @else if $media==iphone-six {
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+            @content;
+        }
+    }
+    @else if $media==iphone-six-portrait {
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+            @content;
+        }
+    }
+    @else if $media==iphone-six-landscape {
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+            @content;
+        }
+    } // iPhone 6 Plus
+    @else if $media==iphone-six-plus {
+        @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+            @content;
+        }
+    }
+    @else if $media==iphone-six-plus-portrait {
+        @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+            @content;
+        }
+    }
+    @else if $media==iphone-six-plus-landscape {
+        @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+            @content;
+        }
+    } // iPhone 5, 5S
+    @else if $media==iphone-five {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+            @content;
+        }
+    }
+    @else if $media==iphone-five-portrait {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+            @content;
+        }
+    }
+    @else if $media==iphone-five-landscape {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+            @content;
+        }
+    } // iPhone 4
+    @else if $media==iphone-four {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-pixel-ratio: 2) {
+            @content;
+        }
+    } // iPhone 2G, 3G, 4, 4S & iPod Touch Gen 1-4
+    @else if $media==iphone {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            @content;
+        }
+    }
+    @else if $media==iphone-portrait {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+            @content;
+        }
+    }
+    @else if $media==iphone-landscape {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+            @content;
+        }
+    } // iPhone 2G, 3G, 3GS
+    @else if $media==iphone-first {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            @content;
+        }
+    }
+    @else if $media==iphone-first-portrait {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+            @content;
+        }
+    }
+    @else if $media==iphone-first-landscape {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+            @content;
+        }
+    } //BOOTSTRAP GRID	
+    @else if $media==screen-lg {
+        @media only screen and (min-width: 1200px) {
+            @content;
+        }
+    }
+    @else if $media==screen-md {
+        @media only screen and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @else if $media==screen-sm {
+        @media only screen and (max-width: 991px) {
+            @content;
+        }
+    }
+    @else if $media==screen-xs {
+        @media only screen and (max-width: 767px) {
+            @content;
+        }
+    } // Custom 
+    @else if $media==screen-xxs {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    }
+    @else if $media==screen-lgx {
+        @media only screen and (max-width: 1600px) {
+            @content;
+        }
+    }
+    @else if $media==screen-lgxx {
+        @media only screen and (max-width: 1900px) {
+            @content;
+        }
+    }
+    @else if $media==screen-m-lg {
+        @media only screen and (max-width: 1400px) {
+            @content;
+        }
+    }
+}
+
+@mixin respond-max($screen-width) {
+    @media only screen and (max-width: $screen-width) {
+        @content;
+    }
+}
+
+@mixin respond-min($screen-width) {
+    @media only screen and (min-width: $screen-width) {
+        @content;
+    }
+}
+
+@mixin respond-max-min($min-width, $max-width) {
+    @media only screen and (max-width: $max-width) and (min-width: $min-width) {
+        @content;
+    }
+}
