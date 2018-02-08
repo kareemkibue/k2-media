@@ -5,15 +5,11 @@ This repository contains a collection of CSS3 media queries curated in SASS, Sty
 
 The breakpoints used are based on the CSS Tricks post ["Media Queries for Standard Devices"](http://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
 
-## Breakpoints covered
+## Popular Breakpoints covered
 
-+ Tablet 
-+ Small screens (small tablets)
-+ Mobile (< 768px) 
-
-
-
-1. SASS
++ Tablet ( <= 768px ) 
++ Small screens, ideally small tablets ( < 992px )
++ Mobile ( < 768px ) 
 
 Example of use:
 ---
