@@ -1,0 +1,19 @@
+syntax: glob
+
+#Hidden files
+*.DS_Store
+*[Tt]humbs.db
+*.Trashes
+
+node_modules/
+.sass-cache/
+.tscache/
+yarn.lock
+package-lock.json
+
+dist/
+*.map
+
+# Visual Studio, VS-Code Settings
+.vscode/
+.vs
