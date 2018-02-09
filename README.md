@@ -20,3 +20,5 @@ Example of use:
 ```
 
 `$media=tablets-landscape` and `$media=tablets-portrait` caters for all tablets (both iPad and Android), in both orientations
+
+More docs coming up..
