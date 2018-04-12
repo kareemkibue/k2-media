@@ -52,9 +52,11 @@ export const media = {
 export const mediaPrint = {};
 
 export const respond = (minWidth:string, maxWidth:string) => {
-	if (minWidth !== undefined && maxWidth !== undefined) {
-		return `@media only screen and (min-width: ${minWidth}) and (max-width: ${maxWidth})`;
+	if (minWidth === undefined && maxWidth === undefined) {
+		return;
 	}
+
+	return `@media only screen and (min-width: ${minWidth}) and (max-width: ${maxWidth})`;
 };
 export const respondMin = (minWidth:string) => {
 	return `@media only screen and (min-width: ${minWidth})`;
