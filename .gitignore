@@ -14,7 +14,7 @@ yarn.lock
 package-lock.json
 .yml
 
-index.js
+*.js
 src/*.js
 
 #Config Files
