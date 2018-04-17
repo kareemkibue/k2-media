@@ -1,7 +1,7 @@
 {
     "name": "k2-media",
-    "version": "0.1.0",
-    "description": "A collection of media queries for use in ES6, SASS",
+    "version": "0.2.0beta1",
+    "description": "A collection of media queries for use as an ES6 module and in SASS projects",
     "main": "index.ts",
     "repository": {
         "type": "git",
