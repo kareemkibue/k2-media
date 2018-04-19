@@ -3,7 +3,9 @@
  * TypeScript version: 2.8.1
  */
 
-export const media:any;
+import { IMedia, IMediaIos } from "./types";
+
+export const media:IMedia;
 
 export const mediaIos:any;
 

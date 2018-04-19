@@ -1,13 +1,6 @@
-/* const media = {
-	pc: '@media only screen and (min-width: 1824px)',
+import { IMedia, IMediaIos } from "./types";
 
-	respond: (maxWidth, minWidth) => {
-		const minWidthQuery = minWidth ? 'and (min-width: ' + minWidth + ')' : '';
-		return '@media only screen and (max-width: ' + maxWidth + ') ' + minWidthQuery;
-	},
-}; */
-
-export const mediaIos = {
+export const mediaIos: IMediaIos = {
 	iPad: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)',
 	iPadFirst: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)',
 	iPadFirstLandscape: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1)',
@@ -37,7 +30,7 @@ export const mediaIos = {
 	iPhonePortait: '@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait)',
 	iPhonePortrait: '@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait)',
 };
-export const media = {
+export const media: IMedia = {
 	screenXlg: '@media only screen and (max-width: 1600px)',
 	screenLg: '@media only screen and (min-width: 1200px)',
 	screenMd: '@media only screen and (max-width: 1199px)',
