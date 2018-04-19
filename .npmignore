@@ -15,5 +15,4 @@ package-lock.json
 .map
 .travis.yml
 index.ts
-types.ts
 media.ts
