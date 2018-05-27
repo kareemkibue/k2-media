@@ -1,21 +1,19 @@
 {
-    "compilerOptions": {
-        "sourceMap": true,
-        "noImplicitAny": false,
-        "module": "es2015",
-        "moduleResolution": "node",
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "strictNullChecks": true,
-        "target": "es5",
-        "jsx": "react",
-        "lib": [
-            "es2015",
-            "es2017",
-            "dom"
-        ]
-    },
-    "exclude": [
-        "node_modules"
-    ]
+	"compilerOptions": {
+		"declaration": true,
+		"declarationDir": "types/",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"jsx": "react",
+		"lib": ["es2015", "es2017", "dom"],
+		"module": "es2015",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"noUnusedLocals": true,
+		"sourceMap": true,
+		"mapRoot": "map/",
+		"strictNullChecks": true,
+		"target": "es5"
+	},
+	"exclude": ["node_modules", "types"]
 }

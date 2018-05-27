@@ -1,19 +1,24 @@
-import { IMedia, IMediaIos } from "./types";
-
-export const mediaIos: IMediaIos = {
+const mediaIos = {
 	iPad: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)',
 	iPadFirst: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)',
-	iPadFirstLandscape: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1)',
-	iPadFirstPotrait: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1)',
+	iPadFirstLandscape:
+		'@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1)',
+	iPadFirstPotrait:
+		'@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1)',
 	iPadLandscape: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)',
 	iPadMini: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)',
-	iPadMiniLandscape: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1)',
-	iPadMiniPortrait: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1)',
+	iPadMiniLandscape:
+		'@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1)',
+	iPadMiniPortrait:
+		'@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1)',
 	iPadPortrait: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)',
 	iPadRetina: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)',
-	iPadRetinaLandscape: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)',
-	iPadRetinaPortrait: '@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)',
-	iPhone4: '@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-pixel-ratio: 2)',
+	iPadRetinaLandscape:
+		'@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)',
+	iPadRetinaPortrait:
+		'@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)',
+	iPhone4:
+		'@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-pixel-ratio: 2)',
 	iPhone5: '@media only screen and (min-device-width: 320px) and (max-device-width: 568px)',
 	iPhone5Landscape: '@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape)',
 	iPhone5Portrait: '@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait)',
@@ -25,35 +30,46 @@ export const mediaIos: IMediaIos = {
 	iPhone6Portrait: '@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait)',
 	iPhone: '@media only screen and (min-device-width: 320px) and (max-device-width: 480px)',
 	iPhoneFirst: '@media only screen and (min-device-width: 320px) and (max-device-width: 480px)',
-	iPhoneFirstLandscape: '@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape)',
+	iPhoneFirstLandscape:
+		'@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape)',
 	iPhoneLandscape: '@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape)',
-	iPhonePortait: '@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait)',
+	iPhonePortait:
+		'@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait)',
 	iPhonePortrait: '@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait)',
 };
-export const media: IMedia = {
+
+const media = {
 	screenXlg: '@media only screen and (max-width: 1600px)',
 	screenLg: '@media only screen and (min-width: 1200px)',
 	screenMd: '@media only screen and (max-width: 1199px)',
 	screenSm: '@media only screen and (max-width: 991px)',
 	screenXs: '@media only screen and (max-width: 767px)',
 	screenXxs: '@media only screen and (max-width: 480px)',
-	allTablets: '@media only screen and (max-width: 1280px) and (min-resolution: 169dpi), only screen and (max-width: 1024px), only screen and (max-device-width: 1024px)',
+	allTablets:
+		'@media only screen and (max-width: 1280px) and (min-resolution: 169dpi), only screen and (max-width: 1024px), only screen and (max-device-width: 1024px)',
 	tablet: '@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px)',
-	tabletLandscape: '@media only screen and (max-width: 1024px) and (orientation: landscape), only screen and (max-device-width: 1024px) and (orientation: landscape)',
-	tabletPortrait: '@media only screen and (max-width: 768px) and (orientation: portrait), only screen and (max-device-width: 768px) and (orientation: portrait)',
+	tabletLandscape:
+		'@media only screen and (max-width: 1024px) and (orientation: landscape), only screen and (max-device-width: 1024px) and (orientation: landscape)',
+	tabletPortrait:
+		'@media only screen and (max-width: 768px) and (orientation: portrait), only screen and (max-device-width: 768px) and (orientation: portrait)',
 };
-export const mediaPrint = {};
 
-export const respond = (minWidth:string, maxWidth:string) => {
+//  const mediaPrint = {};
+
+const respond = (minWidth: string, maxWidth: string): string | undefined => {
 	if (minWidth === undefined && maxWidth === undefined) {
 		return;
 	}
 
 	return `@media only screen and (min-width: ${minWidth}) and (max-width: ${maxWidth})`;
 };
-export const respondMin = (minWidth:string) => {
+
+const respondMin = (minWidth: string): string => {
 	return `@media only screen and (min-width: ${minWidth})`;
 };
-export const respondMax = (maxWidth:string) => {
+
+const respondMax = (maxWidth: string): string => {
 	return `@media only screen and (max-width: ${maxWidth})`;
 };
+
+export { mediaIos, media, respond, respondMin, respondMax };
