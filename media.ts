@@ -38,18 +38,29 @@ const mediaIos = {
 	iPhonePortrait: '@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait)',
 };
 
+/** Media Query util - Based on the Twitter Bootstrap Grid */
 const media = {
+	/** max-width: 1600px; media: screen - PCs, Desktops  */
 	screenXlg: '@media only screen and (max-width: 1600px)',
+	/** min-width: 1200px; media: screen - PCs, Desktops */
 	screenLg: '@media only screen and (min-width: 1200px)',
+	/** max-width: 1199px; media: screen - PCs, Desktops */
 	screenMd: '@media only screen and (max-width: 1199px)',
+	/** max-width: 991px; media: screen - Small Tablets */
 	screenSm: '@media only screen and (max-width: 991px)',
+	/** max-width: 767; media: screen - (Mobile) */
 	screenXs: '@media only screen and (max-width: 767px)',
+	/** max-width: 480px; media: screen (Mobile)  */
 	screenXxs: '@media only screen and (max-width: 480px)',
+	/** media: screen - All tablets with touch */
 	allTablets:
 		'@media only screen and (max-width: 1280px) and (min-resolution: 169dpi), only screen and (max-width: 1024px), only screen and (max-device-width: 1024px)',
+	/** max-width: 1024px; media: screen - Tablets, iPads included  */
 	tablet: '@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px)',
+	/** max-width: 1199px; media: screen - Tablets, iPad landscape  */
 	tabletLandscape:
 		'@media only screen and (max-width: 1024px) and (orientation: landscape), only screen and (max-device-width: 1024px) and (orientation: landscape)',
+	/** max-width: 1199px; media: screen - Tablets, iPad Portrait */
 	tabletPortrait:
 		'@media only screen and (max-width: 768px) and (orientation: portrait), only screen and (max-device-width: 768px) and (orientation: portrait)',
 };
