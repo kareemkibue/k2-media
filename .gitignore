@@ -29,6 +29,7 @@ db.config
 map/
 dist/
 *.map
+*.d.ts
 
 #Log files
 *.log
