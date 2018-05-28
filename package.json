@@ -1,15 +1,15 @@
 {
-    "name": "k2-media",
-    "version": "0.2.3",
-    "description": "A collection of media queries for use as an ES6 module and in SASS projects",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/kareemkibue/media-queries"
-    },
-    "author": "Kareem Kibue <mail@kareemkibue.com>",
-    "license": "MIT",
-    "scripts": {
-        "test": ""
-    }    
+	"name": "k2-media",
+	"version": "0.2.4",
+	"description": "A collection of media queries for use as an ES6 module and in SASS projects",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kareemkibue/media-queries"
+	},
+	"author": "Kareem Kibue <mail@kareemkibue.com>",
+	"license": "MIT",
+	"scripts": {
+		"test": ""
+	}
 }
