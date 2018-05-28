@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"declaration": true,
-		"declarationDir": "types/",
+		// "declarationDir": "types/",
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"jsx": "react",
@@ -14,10 +14,11 @@
 		"pretty": true,
 		"strict": true,
 		"noUnusedLocals": true,
-		"sourceMap": true,
-		"mapRoot": "./map/",
+		"sourceMap": false,
+		// "inlineSourceMap": true,
+		// "mapRoot": "./map/",
 		"strictNullChecks": true,
 		"target": "es5"
 	},
-	"exclude": ["node_modules", "types"]
+	"exclude": ["node_modules", "*.d.ts"]
 }
