@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/kareemkibue/media-queries"
+		"url": "https://github.com/kareemkibue/k2-media"
 	},
 	"author": "Kareem Kibue <mail@kareemkibue.com>",
 	"license": "MIT",
