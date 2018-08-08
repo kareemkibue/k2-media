@@ -42,9 +42,9 @@ Popular breakpoints covered:
 
 Less common breakpoints covered:
 
-| Name      | Breakpoint (px) | Devices                                    |
-| --------- | --------------- | ------------------------------------------ |
-| tabletAll | < 1799px        | All tablets irrespective of viewport width |
+| Name      | Breakpoint (px) | Devices                                                                                           |
+| --------- | --------------- | ------------------------------------------------------------------------------------------------- |
+| tabletAll | < 1799px        | All tablets irrespective of viewport width. Unlike `tablet` this takes the DPI into consideration |
 
 ### React/JavaScript
 
@@ -65,7 +65,7 @@ Less common breakpoints covered:
 
 2.  For greater flexibility, use `respondMax` _(Function)_, `respondMin` _(Function)_ or `respond` _(Function)_
 
--   _respondMax( maxWidth: string )_
+-   respondMax( maxWidth: string )
 
     ```
     import { respondMax } from 'k2-media';
@@ -80,7 +80,7 @@ Less common breakpoints covered:
     `
     ```
 
--   _respondMin( minWidth: string )_
+-   respondMin( minWidth: string )
 
     ```
     import { respondMin } from 'k2-media';
@@ -95,7 +95,7 @@ Less common breakpoints covered:
     `
     ```
 
--   _respond( minWidth: string, maxWidth: string )_
+-   respond( minWidth: string, maxWidth: string )
 
     ```
     import { respond } from 'k2-media';
