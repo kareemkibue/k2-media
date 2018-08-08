@@ -3,8 +3,8 @@
 A small library containing a collection of CSS3 media queries curated for use in SASS, and JavaScript (React, React/Typescript or any CSS-in-JS
 implementation)
 
-The breakpoints used are based on the CSS Tricks post
-"[Media Queries for Standard Devices](http://css-tricks.com/snippets/css/media-queries-for-standard-devices/)".
+The breakpoints used are based on the post
+"[Media Queries for Standard Devices](http://css-tricks.com/snippets/css/media-queries-for-standard-devices/)" by CSS Tricks.
 
 **Table of Contents**
 
@@ -65,7 +65,7 @@ Less common breakpoints covered:
 
 2.  For greater flexibility, use `respondMax` _(Function)_, `respondMin` _(Function)_ or `respond` _(Function)_
 
--   `respondMax( maxWidth: string )`
+-   _respondMax( maxWidth: string )_
 
     ```
     import { respondMax } from 'k2-media';
@@ -80,7 +80,7 @@ Less common breakpoints covered:
     `
     ```
 
--   `respondMin( minWidth: string )`
+-   _respondMin( minWidth: string )_
 
     ```
     import { respondMin } from 'k2-media';
@@ -95,21 +95,21 @@ Less common breakpoints covered:
     `
     ```
 
--   `respond( minWidth: string, maxWidth: string )`
+-   _respond( minWidth: string, maxWidth: string )_
 
-        ```
-        import { respond } from 'k2-media';
+    ```
+    import { respond } from 'k2-media';
 
-        /* in css */
-        `
-        background: #f0f0f0;
+    /* in css */
+    `
+    background: #f0f0f0;
 
-        /* styles will only be applied in these 2 breakpoints */
-        ${ respond('500px','1000px') }{
-            background: #f7f7f7;
-        }
-        `
-        ```
+    /* styles will only be applied in these 2 breakpoints */
+    ${ respond('500px','1000px') }{
+        background: #f7f7f7;
+    }
+    `
+    ```
 
 <!--
 ### SASS
