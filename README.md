@@ -65,7 +65,7 @@ Less common breakpoints covered:
 
 2.  For greater flexibility, use `respondMax` _(Function)_, `respondMin` _(Function)_ or `respond` _(Function)_
 
--   **respondMax( maxWidth: string )**
+-   _respondMax( maxWidth: string )_
 
     ```
     import { respondMax } from 'k2-media';
@@ -80,7 +80,7 @@ Less common breakpoints covered:
     `
     ```
 
--   **respondMin( minWidth: string )**
+-   _respondMin( minWidth: string )_
 
     ```
     import { respondMin } from 'k2-media';
@@ -95,7 +95,7 @@ Less common breakpoints covered:
     `
     ```
 
--   **respond( minWidth: string, maxWidth: string )**
+-   _respond( minWidth: string, maxWidth: string )_
 
     ```
     import { respond } from 'k2-media';
