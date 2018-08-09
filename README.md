@@ -32,7 +32,7 @@ yarn add k2-media
 
 ### React/JavaScript
 
-1.  Use `media` _(Object: IMedia)_ for set breakpoints
+1.  Use `media (Object: IMedia)` for set breakpoints
 
     Popular breakpoints covered `media` (IMedia):
 
@@ -43,7 +43,7 @@ yarn add k2-media
     | screenSm | < 992px             | Small tablets                         |
     | screenXs | < 768px (<=767px)   | iPad Portrait, Standard mobile phones |
 
-    Tablet only breakpoints under `media` (IMedia):
+    Tablet only breakpoints under `media: IMedia`:
 
     | Name            | Breakpoint (px)     | Devices                                                                                                             |
     | --------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -51,7 +51,7 @@ yarn add k2-media
     | tabletLandscape | < 1025px (<=1024px) | All tablets (and smartphones) in landscape orientation                                                              |
     | tabletPortrait  | < 768px             | All tablets (and smartphones) in portrait orientation                                                               |
 
-    Less common breakpoints covered under `media` (IMedia):
+    Less common breakpoints covered under `media: IMedia`:
 
     | Name      | Breakpoint (px) | Devices                      |
     | --------- | --------------- | ---------------------------- |
@@ -85,7 +85,7 @@ yarn add k2-media
     `
     ```
 
-2.  For greater flexibility, use `respondMax` _(Function)_, `respondMin` _(Function)_ or `respond` _(Function)_
+2.  For greater flexibility, use `respondMax: Function`, `respondMin: Function` or `respond: Function`
 
 -   _respondMax( maxWidth: string )_
 
@@ -133,7 +133,7 @@ yarn add k2-media
     `
     ```
 
-3.  Use `IMediaIos` _Object: IMediaIos_ for iOs only breakpoints (iOs Safari compatible)
+3.  Use `IMediaIos (Object: IMediaIos)` for iOs only breakpoints (iOs Safari compatible)
 
     | Name                 | Breakpoint (px)    | Devices                                           |
     | -------------------- | ------------------ | ------------------------------------------------- |
