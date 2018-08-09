@@ -10,8 +10,8 @@ The breakpoints used are based on the post
 
 -   [Getting Started](#getting-started)
 -   [How to use](#how-to-use)
-    -   [React/JavaScript](#react/javascript)
-    -   [SASS](#SASS)
+    -   [React/JavaScript](#reactjavascript) _(media, mediaIos, respond)_
+    -   [SASS](#sass)
 -   [Changelog](#changelog)
 
 ## Getting Started
