@@ -126,7 +126,7 @@ yarn add k2-media
     `
     background: #f0f0f0;
 
-    /* styles will only be applied in these 2 breakpoints */
+    /* styles will only be applied within these 2 breakpoints */
     ${ respond('500px','1000px') }{
         background: #f7f7f7;
     }
