@@ -10,7 +10,7 @@ bower_components/
 node_modules/
 .sass-cache/
 .tscache/
-yarn.lock
+# yarn.lock
 package-lock.json
 .map
 .travis.yml

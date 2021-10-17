@@ -1,24 +1,22 @@
 {
-	"compilerOptions": {
-		"declaration": true,
-		// "declarationDir": "types/",
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"jsx": "react",
-		"lib": ["es2015", "es2017", "dom"],
-		"module": "es2015",
-		"moduleResolution": "node",
-		"noImplicitAny": true,
-		"noImplicitReturns": true,
-		"diagnostics": false,
-		"pretty": true,
-		"strict": true,
-		"noUnusedLocals": true,
-		"sourceMap": false,
-		"inlineSourceMap": false,
-		// "mapRoot": "./map/",
-		"strictNullChecks": true,
-		"target": "es5"
-	},
-	"exclude": ["node_modules", "*.d.ts"]
+    "compilerOptions": {
+        "declaration": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "lib": ["es2015", "es2017", "dom"],
+        "module": "es2015",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "diagnostics": false,
+        "pretty": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "sourceMap": false,
+        "inlineSourceMap": false,
+        "strictNullChecks": true,
+        "target": "es5"
+    },
+    "exclude": ["node_modules", "*.d.ts"]
 }
